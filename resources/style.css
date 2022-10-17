@@ -46,9 +46,10 @@
     margin-bottom: 32.26px;
 }
 
+
 .chooseDisplay {
     height: 205px;
-    width: 327px;
+    width: 100%;
     border-radius: 15px;
     background-color: #1F3641;
     display: flex;
@@ -146,16 +147,27 @@
 
 }
 
+.playGameBtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 #playText1 {
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
     letter-spacing: 1px;
     background-color: var(--btn2b);
-    padding: 50px 50px;
     border-radius: 15px;
     padding: 18px 82px;
     margin-bottom: 16px;
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #playText2 {
@@ -167,6 +179,10 @@
     padding: 50px 50px;
     border-radius: 15px;
     padding: 18px 82px;
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* --------------------------------- PAGE 2 ---------------------------*/
@@ -504,3 +520,65 @@
     letter-spacing: 1.5px;
     color: var(--btn3a);
 }
+
+/* --------------------- MEDIA QUERIES ----------------------- */
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    #page1 {
+        width: 460px;
+        height: 471px;
+    }
+
+    #playGameBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #playText1 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: 1.25px;
+    }
+    #playText2 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: 1.25px;
+    }
+
+    .grid {
+        grid-template-columns: 140px 140px 140px;
+        grid-template-rows: 140px 140px 140px;
+    }
+  }
+  
