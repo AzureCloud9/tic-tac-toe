@@ -26,16 +26,13 @@ chooseX.addEventListener('click', e => {
 })
 
 playVcpu.addEventListener('click', e => {
-    container1.style.display = 'none'
-    container2.style.display = 'block'
+    
 })
 
 playVplay.addEventListener('click', e => {
     container1.style.display = 'none'
     container2.style.display = 'block'
     game()
-    
-
 })
 
 
