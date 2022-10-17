@@ -45,6 +45,7 @@ const restartbtn = document.getElementById('restart')
 const turnX = document.getElementById('turnX')
 const turnO = document.getElementById('turnO')
 const card = document.getElementById('card1')
+const card2 = document.getElementById('card2')
 const cardTitle = document.getElementById('takeRound');
 const xRoundImg = document.getElementById('xRound');
 const oRoundImg = document.getElementById('oRound');
@@ -53,7 +54,15 @@ const tieScore = document.getElementById('tiesScore');
 const npcScore = document.getElementById('npcScore');
 const quitBTN = document.getElementById('quiteBTN')
 const continueBTN = document.getElementById('continueBTN')
+const opaciry = document.getElementById('opaciry')
+const noCancelbtn = document.getElementById('noCancelbtn')
+const yesRestartbtn = document.getElementById('yesRestartbtn')
 
+
+
+let pScore = 0;
+let UScore = 0; 
+let TScore = 0;
  
 
 
@@ -74,8 +83,8 @@ let running = false;
 
 function game(){
     cells.forEach(cell => cell.addEventListener("click", cellClicked));
-    restartbtn.addEventListener("click", restartGame);
     running = true;
+    Restartbtn()
 }
 function cellClicked(){
     const cellIndex = this.getAttribute("cellIndex");
@@ -128,14 +137,21 @@ function checkWinner(){
             cardTitle.style.color = '#F2B137'
             xRoundImg.style.display = 'none'
             oRoundImg.style.display = 'block'
+            opaciry.style.display = 'block'
+            UScore++
+            npcScore.innerHTML = UScore
             QuitBTN()
             ContinueBTN()
+        
 
         } else if (currentPlayer == "X"){
             card.style.display = 'flex'
             cardTitle.style.color = '#31C3BD'
             xRoundImg.style.display = 'block'
             oRoundImg.style.display = 'none'
+            opaciry.style.display = 'block'
+            pScore++
+            playerScore.innerHTML = pScore
             QuitBTN()
             ContinueBTN()
 
@@ -148,6 +164,9 @@ function checkWinner(){
             cardTitle.innerHTML = 'ROUND TIED'
             xRoundImg.style.display = 'none'
             oRoundImg.style.display = 'none'
+            opaciry.style.display = 'block'
+            TScore++
+            tieScore.innerHTML = TScore
             QuitBTN()
             ContinueBTN()
 
@@ -163,6 +182,8 @@ function restartGame(){
     cells.forEach(cell => cell.textContent = "");
     running = true;
     card.style.display = 'none'
+    opaciry.style.display = 'none'
+
 } 
 
 function QuitBTN() {
@@ -174,6 +195,14 @@ function QuitBTN() {
         card.style.display = 'none'
         container1.style.display = 'flex'
         container2.style.display = 'none'
+        opaciry.style.display = 'none'
+        TScore = 0;
+        pScore = 0;
+        UScore = 0;
+        tieScore.innerHTML = '0'
+        npcScore.innerHTML = '0'
+        playerScore.innerHTML = '0'
+
 
     })
 }
@@ -185,7 +214,38 @@ function ContinueBTN(){
         cells.forEach(cell => cell.textContent = "");
         running = true;
         card.style.display = 'none'
-        
+        opaciry.style.display = 'none'
+
+    
     })
 
 }
+
+function Restartbtn() {
+    restartbtn.addEventListener('click', e => {
+        card2.style.display = 'flex';
+        opaciry.style.display = 'block';
+    })
+    noCancelbtn.addEventListener('click', e => {
+        card2.style.display = 'none';
+        opaciry.style.display = 'none';
+    })
+    yesRestartbtn.addEventListener('click', e => {
+        card2.style.display = 'none';
+        opaciry.style.display = 'none';
+        currentPlayer = "X";
+        options = ["", "", "", "", "", "", "", "", ""];
+        cells.forEach(cell => cell.textContent = "");
+        running = true;
+        TScore = 0;
+        pScore = 0;
+        UScore = 0;
+        tieScore.innerHTML = '0'
+        npcScore.innerHTML = '0'
+        playerScore.innerHTML = '0'
+
+    })
+}
+
+
+

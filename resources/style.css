@@ -439,3 +439,68 @@
     line-height: 30px;
     letter-spacing: 1.5px;
 }
+
+#opaciry {
+    background-color: black;
+    opacity: 0.6;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    display: none;
+}
+
+#card2 {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--btn4b);
+    height: 228px;
+    width: 100vw;
+    position: absolute;
+    top: 198px;
+}
+
+#noCancelbtn {
+    background-color: var(--btn3a);
+    color: #1A2A33;
+    width: 146px;
+    height: 52px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 1px;
+
+}
+
+#yesRestartbtn {
+    background-color: var(--btn2a);
+    color: var(--btn4a);
+    width: 146px;
+    height: 52px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+#restartTitle {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    color: var(--btn3a);
+}
