@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./resources/style.css">
+  <title>Tic Tac Toe</title>
+</head>
+<body>
+
+  <!-- New game menu start -->
+<section id="container">
+
+<div id="page1">
+    <div class="xo">
+      <img class="xos" src='./assets/icon-x.svg' alt="x">
+      <img class="xos" src="./assets/icon-o.svg"alt="o">
+    </div>
+
+    <div class="chooseDisplay">
+      <h1 class="chooseTitle"> PICK PLAYER 1'S MARK</h1>
+      <div class="choosing">
+        
+        <img id="chooseX" class="chooseX" src='./assets/icon-x grey.svg'alt="x">
+        <img id="chooseX2" class="chooseX2" src='./assets/icon-x darkGrey.svg'alt="x">
+
+        <img id="chooseO" class="chooseO" src="./assets/icon-o darkGrey.svg"alt="o">
+        <img id="chooseO2" class="chooseO2" src="./assets/icon-o grey.svg"alt="o">
+
+      </div>
+      <h1 class="chooseInfo">REMEMBER: X GOES FIRST</h1>
+  </div>
+
+  <div id="playGameBtn" class="playGameBtn">
+    <h1 id="playText1">New Game (vs CPU)</h1>
+  </div>
+
+  <h1 id="playText2">New Game (vs Player)</h1>
+  </div>
+</div>
+
+</section>
+
+<section id="container2">
+  <div id="upper">
+    <div class="logos">
+      <img  src='./assets/icon-x.svg' alt="x">
+      <img  src="./assets/icon-o.svg"alt="o">
+    </div>
+
+    <div class="turns" >
+      <img id="turnX" src='./assets/icon-x grey.svg'alt="x">
+      <img id="turnO" src="./assets/icon-o grey.svg"alt="o">
+      <h1 class="turnTitle">TURN</h1>
+    </div> 
+
+    <div id="restart" >
+      <img class="restartImg" src="./assets/icon-restart.svg">
+    </div>
+  </div>
+
+  <div class="grid">
+    <div cellIndex="0" class="cell"></div>
+    <div cellIndex="1" class="cell"></div>
+    <div cellIndex="2" class="cell"></div>
+    <div cellIndex="3" class="cell"></div>
+    <div cellIndex="4" class="cell"></div>
+    <div cellIndex="5" class="cell"></div>
+    <div cellIndex="6" class="cell"></div>
+    <div cellIndex="7" class="cell"></div>
+    <div cellIndex="8" class="cell"></div>
+
+    <div class="youScore">
+      <h1 >X (YOU):</h1>
+      <h1 id="playerScore">0</h1>
+    </div>
+    <div class="tieScore">
+      <h1>TIES</h1>
+      <H1 id="tiesScore">0</H1>
+    </div>
+    <div class="npcScore">
+      <h1>O (CPU)</h1>
+      <h1 id="npcScore">0</h1>
+    </div>
+  </div>
+
+  <div id="card1" class="card1">
+    <h1 id="cardTitle">OH NO, YOU LOST... </h1>
+    <div id="tRound">
+      <img id="winXO" src='./assets/icon-o.svg'alt="x">
+      <h1 id="takeRound">TAKES THE ROUND</h1>
+    </div>
+    <div class="buttons">
+      <div id="quiteBTN">
+          <h1>QUITE</h1>
+      </div>
+
+      <div id="continueBTN">
+          <h1>NEXT ROUND</h1>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section id="winner">
+
+  
+  
+
+</section>
+  
+  
+
+
+  <script src="./resources/app.js"></script>
+</body>
+</html>
