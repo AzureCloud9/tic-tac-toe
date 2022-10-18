@@ -54,6 +54,7 @@ const continueBTN = document.getElementById('continueBTN')
 const opaciry = document.getElementById('opaciry')
 const noCancelbtn = document.getElementById('noCancelbtn')
 const yesRestartbtn = document.getElementById('yesRestartbtn')
+const WoL = document.getElementById('cardTitle')
 
 
 
@@ -130,6 +131,7 @@ function checkWinner(){
 
     if(roundWon){
         if(currentPlayer == "O"){
+            WoL.innerHTML = "PLAYER 2 WINS!"
             card.style.display = 'flex'
             cardTitle.style.color = '#F2B137'
             xRoundImg.style.display = 'none'
@@ -143,6 +145,7 @@ function checkWinner(){
 
         } else if (currentPlayer == "X"){
             card.style.display = 'flex'
+            WoL.innerHTML = "PLAYER 1 WINS!"
             cardTitle.style.color = '#31C3BD'
             xRoundImg.style.display = 'block'
             oRoundImg.style.display = 'none'
@@ -157,6 +160,7 @@ function checkWinner(){
     }
     else if(!options.includes("")){
             card.style.display = 'flex'
+            WoL.innerHTML = ""
             cardTitle.style.color = '#A8BFC9'
             cardTitle.innerHTML = 'ROUND TIED'
             xRoundImg.style.display = 'none'

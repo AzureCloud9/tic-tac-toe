@@ -379,12 +379,13 @@
 }
 
 #cardTitle {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 18px;
     letter-spacing: 0.875px;
     color: var(--btn3a);
     margin-bottom: 16px;
+    
 }
 
 .winXO {
@@ -430,7 +431,7 @@
 #continueBTN {
     background-color: var(--btn2a);
     color: #1A2A33;
-    width: 146;
+    width: 146px;
     height: 52px;
     border-radius: 10px;
     display: flex;
@@ -579,6 +580,55 @@
     .grid {
         grid-template-columns: 140px 140px 140px;
         grid-template-rows: 140px 140px 140px;
+    }
+
+    #upper {
+        margin-bottom: 19px;
+
+    }
+
+    .turns {
+        width: 140px;
+        height: 52px;
+        margin-right: 114px;
+        margin-left: 89px;
+    }
+
+    .cell {
+        font-size: 90px;
+    }
+
+    #container2 {
+        height: 115vh;
+
+    }
+
+    .card1 {
+        height: 266px;
+    }
+
+    #tRound > h1 {
+        font-size: 40px;
+    
+    }
+
+    #oRound {
+        height: 64px;
+        width: 64px;
+        margin-right: 24px;
+
+    }
+
+    #xRound {
+        height: 64px;
+        width: 64px;
+        margin-right: 24px;
+    }
+
+    #takeRound{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
   }
   
