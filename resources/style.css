@@ -530,8 +530,56 @@
 */
 
 @media (min-width: 1281px) {
-  
-    /* CSS */
+
+    #page1 {
+        width: 460px;
+    }
+
+    .xos{
+        margin-top: 215px;
+    }
+
+    .choosing {
+        width: 396px;
+
+    }
+
+    .chooseX {
+        padding: 11px 80px;
+    }
+
+    .chooseX2 {
+        padding: 11px 80px;
+    }
+
+    .chooseO {
+        padding: 11px 80px;
+    }
+
+    .chooseO2 {
+        padding: 11px 80px;
+    }
+
+    #upper {
+        margin-bottom: 19px;
+
+    }
+
+    .grid {
+        grid-template-columns: 140px 140px 140px;
+        grid-template-rows: 140px 140px 140px;
+    }
+
+    .turns {
+        width: 140px;
+        height: 52px;
+        margin-right: 114px;
+        margin-left: 89px;
+    }
+
+    .card1 {
+        top: 300px;
+    }
     
   }
   
