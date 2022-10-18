@@ -1,4 +1,7 @@
 # tic-tac-toe
- TIC TAC TOE (Not finished yet)
+Project (Not finished yet)
 
-starting with mobile first then tablets then laptops/dekstops.
+Your users should be able to:
+
+View the optimal layout for the game depending on their device's screen size
+Play the game either solo vs the computer or multiplayer against another person (Player vs Player completed)
