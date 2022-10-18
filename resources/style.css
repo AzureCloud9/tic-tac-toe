@@ -562,6 +562,8 @@
 
     #upper {
         margin-bottom: 19px;
+        padding-top: 45px;
+
 
     }
 
@@ -615,24 +617,25 @@
     }
 
     .grid {
-        grid-template-columns: 140px 140px 140px;
-        grid-template-rows: 140px 140px 140px;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
     }
 
     #upper {
         margin-bottom: 19px;
+        padding-top: 53px;
 
     }
 
     .turns {
-        width: 140px;
+        width: 107px;
         height: 52px;
-        margin-right: 114px;
-        margin-left: 89px;
+        margin-right: 70px;
+        margin-left: 50px;
     }
 
     .cell {
-        font-size: 90px;
+        font-size: 65px;
     }
 
     #container2 {
