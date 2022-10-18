@@ -256,7 +256,7 @@
     width: 100vw;
     justify-content: center;
     align-items: center;
-    padding-top: 24px;
+    padding-top: 119px;
     margin-bottom: 64px;
 }
 
@@ -627,7 +627,7 @@
     ##Screen = B/w 768px to 1024px
   */
   
-  @media (min-width: 768px) and (max-width: 1023px) {
+  @media (min-width: 767px) and (max-width: 1023px) {
     
     #page1 {
         width: 460px;
@@ -660,6 +660,7 @@
 
     #upper {
         margin-bottom: 19px;
+        padding-top: 200px;
 
     }
 
@@ -675,7 +676,7 @@
     }
 
     #container2 {
-        height: 115vh;
+        height: 100vh;
 
     }
 
@@ -706,5 +707,14 @@
         justify-content: center;
         align-items: center;
     }
+
+    #card1 {
+        top: 386px;
+    }
+
+    #card2 {
+        top: 386px;
+    }
   }
+
   
